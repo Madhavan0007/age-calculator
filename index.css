@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 229, 229);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    background-color: white;
+    min-height: 60vh; 
+    border-radius: 20px 20px 150px 20px;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+}
+.form{
+    margin-top : 40px;
+    margin-left: 40px;
+    display: flex;
+    
+}
+.form-box{
+    align-items: start;
+    justify-content: start;
+    margin-right: 2rem;
+}
+
+.form-box:last-child {
+    margin-right: 0px;
+}
+
+.form-box label{
+    color: rgb(89, 94, 94);
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.form-box input {
+    outline: none;
+    height: 60px;
+    width: 140px;
+    border-radius: 5px;
+    border: 1px solid rgba(211, 211, 211, 0.836);
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.form-box input:focus {
+    border-width: 2px;
+    border-color:blueviolet;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-box input::placeholder {
+    color: rgba(150, 145, 145, 0.836);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.submit {
+    margin-top : 15px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.submit .line {
+    height: 2px;
+    background-color: rgba(192, 187, 187, 0.397);
+    min-width: 75%;
+    /* margin-top: 8px; */
+}
+
+.submit button {
+    padding: 10px;
+    outline: none;
+    margin-right: 40px;
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgb(149, 109, 243);
+    border: 0px solid rgb(98, 43, 226);
+    color: whitesmoke;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit button:hover {
+    background-color: black;
+}
+
+.result {
+    margin: 20px;
+    margin-left: 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.year, .month, .days {
+    font-style: italic;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.yearValue, .monthValue, .daysValue {
+    color: rgb(149, 109, 243);
+}
+
+.form-box .required-error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.input .invalid {
+    border-color: red;
+}
+
+.form-box .range-error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
+
+
+
+
+
+
